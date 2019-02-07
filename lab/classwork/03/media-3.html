@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<title>media queries</title>
+<style>
+
+/* mobile layout */
+body{
+	background-color: purple;
+}
+
+@media (/*does device support*/hover) and (min-width: 600px){ 
+	/* desktop layout(non-touchscreen) smaller window*/
+	body{
+		background-color: orange;
+	}
+}
+@media (hover) and (min-width: 1000px){ 
+	/* desktop layout larger window */
+	body{
+		background-color: red;
+	}
+}
+</style>

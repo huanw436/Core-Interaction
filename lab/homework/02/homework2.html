@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body{
+		display:flex;
+		flex-direction: column;
+		margin:0;
+	}
+	div{
+		flex:1;
+	}
+	html, body{
+		height: 100%;
+	}
+</style>
+	<title>homework2</title>
+</head>
+<body>
+<script>
+
+var counter = 1;
+var row = Math.floor(Math.random()*20);
+while(counter < row){
+	var thing = document.createElement("div");
+	document.body.appendChild(thing);
+	var h = Math.floor(Math.random()*360);
+	var s = Math.floor(Math.random()*100);
+	var l = Math.floor(Math.random()*100);
+	thing.style.backgroundColor = "hsl("+ h +", "+ s +"%, "+ l +"%)";
+	counter = counter + 1;
+}
+
+</script>
+</body>
+</html>
+
+
+
